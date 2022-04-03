@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+$font-family-sans-serif: "Poppins", sans-serif;
+
+$light: #f0e6ef;
+$primary: #9c89b8;
+$secondary: #f0a6ca;
+$success: #e3f2fd;
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+.gradient {
+  background: #ee9ca7; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ee9ca7, #ffdde1); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ee9ca7, #ffdde1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.invoice-card {
+  background-color: #ee9ca73d;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+.copy-btn:hover {
+  cursor: pointer;
+}
+@media print {
+  .invoice-card {
+    width: 100vw;
+    height: 100vh;
+  }
+  .hideInPrint {
+    display: none;
+  }
+}
+
+body.swal2-shown > [aria-hidden="true"] {
+  transition: 0.3s filter;
+  filter: blur(7.5px);
+  -webkit-filter: blur(7.5px);
+}
+$swal2-toast-background: #f0a6ca9c;
+$swal2-success: $primary;
+$swal2-warning: $secondary;
+$swal2-confirm-button-background-color: $primary;
+@import "../../node_modules/sweetalert2/src/sweetalert2.scss";
