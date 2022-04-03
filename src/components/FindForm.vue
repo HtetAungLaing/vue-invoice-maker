@@ -5,8 +5,8 @@
         <form @submit.prevent="search">
           <div class="row align-items-end">
             <div class="col-8 col-md-9">
-              <label for="" class="form-label">Enter invoice's KEY to find invoice.</label>
-              <input required v-model="invoiceKey" type="text" name="" class="form-control" id="" placeholder="example : UCd3Vbf2DW9sIFx93QJK" />
+              <label for="" class="form-label">Enter invoice's KEY to find your invoice.</label>
+              <input required v-model="invoiceKey" type="text" name="" class="form-control" id="" placeholder="e.g. UCd3Vbf2DW9sIFx93QJK" />
             </div>
             <div class="col-4 col-md-3">
               <button class="btn btn-sm btn-primary w-100">
