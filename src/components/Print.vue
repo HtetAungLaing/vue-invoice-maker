@@ -38,7 +38,7 @@ export default {
         cancelButtonColor: "#f0a6ca",
         confirmButtonText: "Yes, uploaded it",
       }).then((result) => {
-        if (result.isConfirmed) {
+        if (result.isConfirmed && this.records.length > 0) {
           let save = async () => {
             let data = { invoiceNumber: this.invoiceNumber, created_at: timestamp(), recordData: this.records, total: this.calTotal };
             console.log(this.calTotal);

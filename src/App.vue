@@ -39,10 +39,16 @@ export default {
   data() {
     return {
       items: [
-        { id: 1, name: "Monitor", price: 300 },
-        { id: 2, name: "Keyboard", price: 200 },
-        { id: 3, name: "Mouse", price: 200 },
-        { id: 4, name: "Cpu", price: 1300 },
+        { id: 1, name: "R7-5700G", price: 430 },
+        { id: 2, name: "R7-5800X", price: 529 },
+        { id: 3, name: "RX6600 XT", price: 680 },
+        { id: 4, name: "RX6700 XT", price: 1010 },
+        { id: 5, name: "8GB DDR3", price: 42 },
+        { id: 6, name: "8GB DDR4", price: 46 },
+        { id: 7, name: "HDD 6TB", price: 220 },
+        { id: 8, name: "NVME 512GB", price: 90 },
+        { id: 9, name: "AOC IPS Panel", price: 390 },
+        { id: 10, name: "LG 23.5", price: 209 },
       ],
       records: [],
       isSaved: false,
